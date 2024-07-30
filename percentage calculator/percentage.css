@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    user-select: none;
+    margin-bottom: 0.5rem;
+    text-decoration: underline;
+}
+p{
+    margin-bottom: 0.5rem;
+}
+body{
+    background: #7b4397;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #000000, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #000000, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: rgba(255, 255, 255, 0.212);
+    backdrop-filter: blur(40px);
+    border-radius: 5px;
+    width: 100%;
+    max-width: 500px;
+    padding: 2vh 2vw;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+}
+.percentage div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 2vh;
+}
+.container input{
+    width: 50%;
+    height: 2rem;
+    outline: none;
+    border: none;
+    padding: 4px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+}
+#result-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 2vh;
+}
+.result{
+    width: 50%;
+    height: 2rem;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.637);
+    border-radius: 5px;
+    color: black;
+    box-shadow: 0 0 4px rgba(0,0,0,.3);
+}
+.btn{
+    width: 50%;
+    height: 2rem;
+    border: none;
+    outline: none;
+    background: linear-gradient(to right, white, black);
+    transition: transform .2s ease-in;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 4px rgba(0,0,0,.3);
+}
+#btn:hover{
+    transform: scale(1.02);
+    background: linear-gradient(to right, #dc2430, #7b4397);
+}
+.error{
+    animation: shake 0.1s linear 10;
+}
+
+@keyframes shake{
+    0%{
+        transform: translateX(0px);
+        background-color: rgba(255, 0, 0, 0.4);
+    }
+    25%{
+        transform: translateX(-2px);
+        background-color: rgba(255, 0, 0, 0.4);
+    }
+    50%{
+        transform: translateX(0px);
+        background-color: rgba(255, 0, 0, 0.4);
+    }
+    75%{
+        transform: translateX(2px);
+        background-color: rgba(255, 0, 0, 0.4);
+    }
+    100%{
+        transform: translateX(0px);
+        background-color: rgba(255, 0, 0, 0.4);
+    }
+}

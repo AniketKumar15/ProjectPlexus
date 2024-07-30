@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Reem Kufi Ink", Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+h1{
+    text-align: center;
+}
+body{
+    background-color: black;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box{
+    background-color: #121212;
+    border-radius: 10px;
+    margin: 5px 5px;
+    padding: 10px;
+    font-size: 20vh;
+    text-align: center;
+    width: 30vh;
+    height: 30vh;
+    flex-grow: 1;
+    flex-basis: 200;
+}

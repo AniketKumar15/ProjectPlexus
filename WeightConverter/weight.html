@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Converters</title>
+    <link rel="stylesheet" href="./weight.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="https://cdn.icon-icons.com/icons2/2622/PNG/512/brand_pied_piper_pp_icon_158762.png"
+        type="image/x-icon">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1 id="proTitle">Weight Converter</h1>
+            <div class="inputField" id="fromInput">
+                <input type="number" placeholder="Enter Value">
+                <select name="fromValue" id="fromValue">
+                    <option value="gram">g</option>
+                    <option value="Kilogram">kg</option>
+                    <option value="pound">lbs</option>
+                </select>
+            </div>
+            <div class="inputField" id="toInput">
+                <input type="number" placeholder="Value" disabled>
+                <select name="toValue" id="toValue">
+                    <option value="gram">g</option>
+                    <option value="Kilogram">kg</option>
+                    <option value="pound">lbs</option>
+                </select>
+            </div>
+            <button id="calculate">
+                Calculate
+            </button>
+        </div>
+    </main>
+    <script src="./weight.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Calculator</title>
+    <link rel="stylesheet" href="./loan.css">
+    <link rel="shortcut icon" href="https://cdn.icon-icons.com/icons2/2622/PNG/512/brand_pied_piper_pp_icon_158762.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>Loan Calculator</h1>
+
+        <div class="input-container">
+            <p>Loan Amount ₹</p>
+            <input type="number" placeholder="Enter Loan Amount" id="loanAmount">
+
+            <p>Interest Rate %</p>
+            <input type="number" placeholder="Enter Interest Rate" id="rate">
+
+            <p>Month to pay</p>
+            <input type="number" placeholder="Enter Month" id="month">
+        </div>
+
+        <div class="btn-container">
+            <button id="btn">Calculate Amount</button>
+        </div>
+        <h4 id="result">Monthly Payment: </h4>
+    </div>
+
+    <script src="./loan.js"></script>
+</body>
+</html>

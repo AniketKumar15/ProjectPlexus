@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    -webkit-user-drag: none;
+}
+h1{
+    text-align: center;
+    margin: 10px 0px;
+    text-decoration: underline;
+}
+h3{
+    font-weight: 400;
+    font-size: 17px;
+    color: white;
+}
+p{
+    color: white;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("https://images5.alphacoders.com/133/1330526.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: rgba(255, 255, 255, 0.212);
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    width: 90%;
+    max-width: 400px;
+    padding: 2vh 2vw;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.quiz-Option input{
+    width: 100%;
+    margin: 10px 0px;
+    border: none;
+    padding: 5px;
+    font-size: 17px;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+#startBtn{
+    border: none;
+    padding: 10px;
+    font-size: 17px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    color: black;
+    font-weight: 500;
+    background: white;
+    margin: 10px 0px 10px 0px;
+
+    transition: transform .2s;
+}
+#startBtn:hover{
+    transform: scale(1.05);
+    background-color: blueviolet;
+    color: white;
+}
+#category {
+    color: white;
+    text-align: center;
+    background-color: blueviolet;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    margin: 10px auto;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+#countQuestion{
+    color: blueviolet;
+    text-align: center;
+    background-color: white;
+    border: 1px solid blueviolet;
+    border-radius: 5px;
+    padding: 10px;
+    width: 20%;
+    margin: 10px auto;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    font-weight: 900;
+}
+#btn{
+    width: 100%;
+    border: none;
+    padding: 10px 7px;
+    font-size: 14px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    color: black;
+    font-weight: 400;
+    background: white;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+#btn:hover{
+    background-color: blueviolet;
+    color: white;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+
+
+.options button{
+    text-align: left;
+}
+#nextBtn{
+    border: none;
+    padding: 10px;
+    font-size: 17px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    color: black;
+    font-weight: 500;
+    background: white;
+    margin: 20px 0px 10px 0px;
+
+    transition: transform .2s;
+}
+#restart{
+    border: none;
+    padding: 10px;
+    font-size: 17px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    color: black;
+    font-weight: 500;
+    background: white;
+    margin: 5px 0px 10px 0px;
+
+    transition: transform .2s;
+}
+#nextBtn:hover{
+    transform: scale(1.05);
+    background-color: blueviolet;
+    color: white;
+}
+#restart:hover{
+    transform: scale(1.05);
+    background-color: blueviolet;
+    color: white;
+}
+.scoreBoard{
+    text-align: center;
+}
+.scoreBoard p{
+    font-size: 20px;
+    margin: 10px 0px;
+}
+#grade{
+    text-decoration: none;
+    font-size: 70px;
+    color: rgb(0, 255, 0);
+}
+.quiz-Option{
+    display: block;
+}
+.QuizGame{
+    display: none;
+}
+.scoreBoard{
+    display: none;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percentage Calculate</title>
+    <link rel="stylesheet" href="./percentage.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Percentage Calculator</h1>
+        <p>Percentage Calculator is a tool to calculate percentages.</p>
+
+        <div class="main">
+            <div class="percentage" id="percentageof">
+                What is P% of X?
+                <div id="inputContainer">
+                    <input type="text" placeholder="percent value" id="percent-val">
+                    <input type="text" placeholder="Number value" id="num-val">
+                </div>
+                <div id="result-container">
+                    <button class="btn" id="valueCal">Calculate</button>
+                    <input type="text" placeholder="Result" disabled class="result" id="valueResult">
+                </div>
+                
+            </div>
+
+            <div class="percentage" id="valueOf">
+                Y is What percent of X?
+                <div>
+                    <input type="text" placeholder="Y Value" id="Y-val">
+                    <input type="text" placeholder="X Value" id="X-val">
+                </div>
+                <div>
+                    <button class="btn" id="percentCal">Calculate</button>
+                    <input type="text" placeholder="Result" disabled class="result" id="percentResult">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="percentage.js"></script>
+</body>
+</html>

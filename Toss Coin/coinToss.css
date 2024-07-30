@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FF512F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #DD2476, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #DD2476, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    user-select: none;
+}
+.container{
+    width: 100%;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.404);
+    backdrop-filter: blur(40px);
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+}
+/* .coin{
+    height: 300px;
+    width: 300px;
+} */
+.coin img{
+    height: 300px;
+}
+#btn{
+    border: none;
+    padding: 10px;
+    border-radius: 30px;
+    width: 150px;
+    background-color: #FF512F;
+    border: 2px solid #FF512F;
+    color: white;
+    font-weight: 600;
+    transition: transform .2s linear;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    cursor: pointer;
+}
+#btn:hover{
+    transform: scale(1.05);
+}
+
+.flip{
+    animation: flipCoin .1s ease-in-out 10;
+}
+
+@keyframes flipCoin{
+    0%{
+        content:url("./1.png");
+    }
+    25%{
+        content:url("./2.png");
+    }
+    50%{
+        content:url("./1.png");
+    }
+    75%{
+        content:url("./2.png");
+    }
+    100%{
+        content:url("./1.png");
+    }
+}

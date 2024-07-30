@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./rps.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="https://cdn.icon-icons.com/icons2/2622/PNG/512/brand_pied_piper_pp_icon_158762.png"
+        type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>Rock Paper Scissors</h1>
+        <h4>Choose your move:</h4>
+        <div class="Btn">
+            <Button id="rock"><i class="fa-regular fa-hand-back-fist"></i></Button>
+            <Button id="paper"><i class="fa-regular fa-hand"></i></Button>
+            <Button id="scissors"><i class="fa-regular fa-hand-scissors"></i></Button>
+        </div>
+        <p id="result">Computer Win</p>
+        <div class="scoreTable">
+            <h3>Scores</h3>
+            <table>
+                <tr>
+                    <th>Your Score</th>
+                    <th>Computer Score</th>
+                    <th>Tie</th>
+                </tr>
+                <tr>
+                    <td id="yourScore">000</td>
+                    <td id="computerScore">000</td>
+                    <td id="tieScore">000</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="./rps.js"></script>
+</body>
+</html>

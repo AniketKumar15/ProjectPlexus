@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Reem Kufi Ink", Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+body{
+    /* background-color: #1F2933; */
+    background-color: whitesmoke;
+    border-radius: 10px;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: rgb(0, 183, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+
+}
+#proTitle{
+    text-decoration: underline;
+    margin: 0px 0px 20px 0px;
+}
+.inputField{
+    margin-bottom: 20px;
+}
+.inputField input{
+    border-radius: 5px;
+    padding: 10px 10px;
+    background-color: white;
+    border: none;
+}
+.inputField select{
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+#calculate{
+    background-color: whitesmoke;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px black;
+    width: 100%;
+}
+
+.error{
+    animation: shake 0.1s linear 10;
+}
+
+@keyframes shake{
+    0%{
+        transform: translateX(0px);
+        border: 1px solid red;
+    }
+    25%{
+        transform: translateX(-2px);
+        border: 1px solid red;
+    }
+    50%{
+        transform: translateX(0px);
+        border: 1px solid red;
+    }
+    75%{
+        transform: translateX(2px);
+        border: 1px solid red;
+    }
+    100%{
+        transform: translateX(0px);
+        border: 1px solid red;
+    }
+}

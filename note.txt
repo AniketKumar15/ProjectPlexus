@@ -1,0 +1,21 @@
+Anime
+
+https://pic.re/image
+
+https://nekos.best/api/v2/neko
+
+https://api.waifu.im/search
+
+
+Image
+
+https://picsum.photos/
+
+background Image
+https://images6.alphacoders.com/476/476288.jpg
+https://images5.alphacoders.com/133/1330526.png
+https://images3.alphacoders.com/135/1357779.jpeg
+
+
+flag api
+https://flagsapi.com/IN/flat/64.png
