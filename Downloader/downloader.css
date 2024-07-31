@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Reem Kufi Ink", Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #5F6F65;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  margin: 50px auto 0px;
+  text-align: center;
+  background-color: #111;
+  width: 90%;
+  max-width: 400px;
+  height: 325px;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.container h1 {
+  margin-bottom: 10px;
+}
+
+.container p {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+/* Input */
+.inputBox {
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+  position: relative;
+  color: white;
+}
+
+.inputBox .label {
+  font-size: 15px;
+  padding-left: 10px;
+  position: absolute;
+  top: 12px;
+  transition: 0.3s;
+  pointer-events: none;
+  margin: 20px 0px 20px;
+}
+
+.inputBox button {
+  width: 45px;
+  height: 45px;
+  margin: 20px 0px 30px;
+  border-radius: 5px;
+  border: none;
+  background: transparent;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 1),
+    -1px -1px 6px rgba(255, 255, 255, 0.4);
+  color: white;
+  font-size: 16px;
+}
+
+.inputBox input {
+  width: 100%;
+  height: 45px;
+  border: none;
+  outline: none;
+  padding: 0px 10px;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  background: transparent;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 1),
+    -1px -1px 6px rgba(255, 255, 255, 0.4);
+
+  margin: 20px 0px 30px;
+}
+
+.inputBox input:focus {
+  border: 2px solid transparent;
+  color: #fff;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 1),
+    -1px -1px 6px rgba(255, 255, 255, 0.4),
+    inset 3px 3px 10px rgba(0, 0, 0, 1),
+    inset -1px -1px 6px rgba(255, 255, 255, 0.4);
+}
+
+.inputBox input:valid~.label,
+.inputBox input:focus~.label {
+  transition: 0.3s;
+  padding-left: 2px;
+  transform: translateY(-35px);
+}
+
+.inputBox input:valid,
+.inputBox input:focus {
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 1),
+    -1px -1px 6px rgba(255, 255, 255, 0.4),
+    inset 3px 3px 10px rgba(0, 0, 0, 1),
+    inset -1px -1px 6px rgba(255, 255, 255, 0.4);
+}
+
+/* Button CSS */
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
