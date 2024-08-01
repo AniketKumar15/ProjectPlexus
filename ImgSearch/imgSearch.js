@@ -47,8 +47,6 @@ const searchImage = async () => {
         imgcard.appendChild(atag);
     })
     showMore.style.display="block";
-
-    searchInput.value='';
 }
 searchBtn.addEventListener("click", () => {
     pageNo=1;
